@@ -8,8 +8,10 @@ function increase() {
 
 // Decrease counter
 function decrease() {
-    count--;
+    if(count !== 0){
+        count--;
     document.getElementById("count").innerText = count;
+    }
 }
 
 // Reset counter
@@ -17,3 +19,4 @@ function reset() {
     count = 0;
     document.getElementById("count").innerText = count;
 }
+
